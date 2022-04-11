@@ -34,9 +34,24 @@ module.exports = {
         collapsable: false, // 不折叠
         children: [
           { title: "类型", path: "/handbook/JavaScript/ConditionalTypes" },
-          { title: "泛型", path: "/handbook/JavaScript/Generics" }
+          { title: "泛型", path: "/handbook/JavaScript/Generics" },
+          {
+            title: "异步", path: "/handbook/JavaScript/Async/Async",
+            children: [
+              { title: "JavaSript的异步原理", path: "/handbook/JavaScript/Async/Async" },
+              { title: "Promise", path: "/handbook/JavaScript/Async/Promise" },
+              { title: "Generator", path: "/handbook/JavaScript/Async/Generator" },
+              { title: "AsyncAwait", path: "/handbook/JavaScript/Async/AsyncAwait" }
+            ],
+          }
         ],
-      }
+      },
+      {
+        title: "TypeScript",
+        path: '/handbook/typescript/introduce',
+        collapsable: false, // 不折叠
+      },
+
     ]
   }
 }
